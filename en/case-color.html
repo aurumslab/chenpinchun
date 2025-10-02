@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Case Study | Color Playground</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Chiron+GoRound+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="case-color.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="case-header">
+    <div class="header-container">
+      <div class="header-left">
+        <a href="index.html" class="logo-link">
+          <img src="../images/logo.png" alt="Logo" class="header-logo">
+        </a>
+      </div>
+      
+      <div class="header-right">
+        <div class="language-switch">
+          <a href="../zh/case-color-zh.html" class="lang-btn">中</a>
+          <span class="lang-separator">|</span>
+          <a href="case-color.html" class="lang-btn active">EN</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="color-master-hero">
+    <div class="hero-left">
+      <h1>Color Playground -</h1>
+      <p>Create harmonious palettes<br>in seconds</p>
+    </div>
+    <div class="hero-right">
+      <div class="hero-images">
+        <img src="../images/case-color/hero1.png" alt="Color Master hero 1" class="hero-img">
+        <!--img src="../images/case-color/hero2.png" alt="Color Master hero 2" class="hero-img2"-->
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem & Solution Section -->
+  <section class="problem-solution-section">
+    <div class="problem-section">
+      <h2>Problem Statement</h2>
+      <p>Graphic designers creating brand color schemes, or UI designers working on interface palettes, 
+        often need to ensure WCAG contrast compliance. Existing tools are usually scattered and cumbersome, 
+        requiring multiple apps and manual calculations. This makes the process slow, error-prone, and can lead
+         to palettes that are either inaccessible or visually inconsistent.</p>
+      <!--p>Designers often struggle to quickly generate usable brand color palettes and check WCAG contrast,
+         as existing tools are scattered or cumbersome. The current workflow requires multiple tools and
+          manual calculations, making it time-consuming and error-prone to create accessible, harmonious color schemes.</!--p-->
+         <!-- User Flow Section -->
+
+      <h2>User Flow</h2>
+        <ol class="user-flow-list">
+              <li>Input or select a primary color.</li>
+              <li>Choose a harmony rule and step increments.</li>
+              <li>Click "Generate" to create the color table.</li>
+              <li>View color swatches, check contrast, and preview UI components.</li>
+              <li>Download CSS/JSON or share via URL.</li>
+        </ol>
+        
+        <div class="user-flow-image">
+          <img src="../images/case-color/flow.png" alt="User Flow Diagram" class="flow-img">
+        </div>
+    </div>
+
+    <div class="solution-section">
+      <h2>Solution</h2>
+      <p>I designed the Color Playground, a tool that simplifies the process of generating brand-ready color palettes while ensuring accessibility and usability.</p>
+      
+      <div class="solution-points">
+        <div class="solution-point">
+          <h3>1. Color Harmony Rules</h3>
+          <p>To inspire different palette directions, the tool includes four harmony rules:</p>
+          <ul>
+            <li><strong>Monochromatic</strong> – shades and tints of the same color.</li>
+            <li><strong>Analogous</strong> – neighboring hues on the color wheel.</li>
+            <li><strong>Complementary</strong> – high-contrast pairs from opposite sides of the color wheel.</li>
+            <li><strong>Triadic</strong> – three colors evenly spaced on the color wheel.</li>
+          </ul>
+          <p>This ensures designers can explore both safe and bold combinations.</p>
+        </div>
+        
+        <div class="solution-point">
+          <h3>2. Automatic Palette Expansion</h3>
+          <p>Once the harmony rule is selected, the tool automatically generates a full palette including:</p>
+          <ul>
+            <li>Primary colors</li>
+            <li>Neutral scale (grays, backgrounds, borders)</li>
+            <li>Semantic colors (success, warning, error)</li>
+            <li>Interactive states (hover, active, disabled)</li>
+          </ul>
+          <p>This saves designers from manually building out UI-ready palettes.</p>
+        </div>
+        <div class="solution-point">
+          <h3>3. Accessibility Integration</h3>
+          <p>The system checks WCAG contrast ratios and highlights whether a color combination passes AA or AAA standards. This reduces the risk of accessibility issues later in the design process.</p>
+        </div>
+        
+        <!--div class="solution-point">
+          <h3>5. Export & Sharing</h3>
+          <p>Designers can instantly export palettes as CSS variables or JSON files, making it easy to plug into design systems or codebases. A shareable URL also allows quick collaboration with teammates.</p>
+        </!--div-->
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Images Section -->
+  <section class="solution-images-section">
+    <div class="solution-images-container">
+      <img src="../images/case-color/palette.png" alt="Color Palette" class="palette-img">
+      <img src="../images/case-color/pen.png" alt="Design Pen" class="pen-img">
+    </div>
+  </section>
+
+  <!-- Key Features Section -->
+  <section class="features-section">
+    <div class="features-container">
+      <h2>Key Features</h2>
+      <ul class="key-features-list">
+        <li><strong>Contrast Checking:</strong> Automatically highlights AA / AAA readability.</li>
+        <li><strong>Semantic & Interactive Colors:</strong> Generates button, card, and text colors automatically.</li>
+        <li><strong>Export Options:</strong> CSS variables, JSON code, and shareable links.</li>
+        <li><strong>Instant UI Preview:</strong> Visualizes components like buttons, cards, and chips.</li>
+        <li><strong>Quick Brand Palette Generation:</strong> Supports Monochromatic, Analogous, Complementary, and Triadic schemes.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Prototyping Video Section -->
+  <section class="prototyping-section">
+    <div class="prototyping-container">
+      <video controls class="prototyping-video">
+        <source src="../images/case-color/prototyping.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- User Flow Section >
+  <section-- class="user-flow-section">
+    <div class="user-flow-container">
+      <h2>User Flow</h2>
+      <ol class="user-flow-list">
+        <li>Input or select a primary color.</li>
+        <li>Choose a harmony rule and step increments.</li>
+        <li>Click "Generate" to create the color table.</li>
+        <li>View color swatches, check contrast, and preview UI components.</li>
+        <li>Download CSS/JSON or share via URL.</li>
+      </ol>
+    </div>
+  </section-->
+
+  <script>
+    // Add any interactive functionality here if needed
+  </script>
+</body>
+</html>

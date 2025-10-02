@@ -1,0 +1,56 @@
+<section class="about-section">
+  <div class="about-card">
+    <div class="about-photo">
+      <img src="images/profile.jpg" alt="Sherry profile photo">
+    </div>
+    <div class="about-text">
+      <h3>About Me <span class="wave">👋</span></h3>
+      <p>
+        Hi, I’m <strong>Sherry</strong>, a junior UI/UX designer passionate about 
+        creating intuitive and aesthetically pleasing interfaces.  
+        I love crafting <strong>meaningful interactions</strong> and exploring how 
+        design and front-end code can work together to create engaging experiences.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+.about-section {
+  display: flex;
+  justify-content: center;
+  padding: 120px 20px;
+  background: #f8f9fa;
+}
+
+.about-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+
+  /* 初始隱藏 */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.about-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+
+<script>
+window.addEventListener("scroll", () => {
+  const aboutCard = document.querySelector(".about-card");
+  const rect = aboutCard.getBoundingClientRect();
+  if (rect.top < window.innerHeight - 100) {
+    aboutCard.classList.add("show");
+  }
+});
+</script>

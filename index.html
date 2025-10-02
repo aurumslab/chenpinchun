@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sherry Chen | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Chiron+GoRound+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="en/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="spotlight">
+  <!-- Fixed Contact Sidebar -->
+  <div class="contact-sidebar">
+    <a href="mailto:hello@pinchun.org" aria-label="Email">
+      <i data-lucide="mail"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/sherry-pinchun-chen-088210201/" target="_blank" aria-label="LinkedIn">
+      <i data-lucide="linkedin"></i>
+    </a>
+    <a href="https://github.com/aurumslab" target="_blank" aria-label="GitHub">
+      <i data-lucide="github"></i>
+    </a>
+    <a href="https://www.youtube.com/@aurumslab" target="_blank" aria-label="YouTube">
+      <i data-lucide="youtube"></i>
+    </a>
+  </div>
+
+    <!-- Header：左上角 --> 
+    <!--Switch language-->
+  <div class="lang-switch">
+      <a href="./zh/index.html">中</a> | <a href="index.html" class="active">EN</a>
+  </div>
+  <!-- Logo -->  
+  <header class="site-header">
+    <div class="logo">
+      <div class="logo-text">
+        <h1 class="name-en">Pin-Chun (Sherry) Chen</h1>
+        <p>UI/UX Designer</p>
+      </div>
+      <a href="mailto:hello@pinchun.org">
+        <img src="./images/logo.png" alt="Logo" class="logo-img">
+      </a>
+    
+    </div>
+  </header>
+<!--Hero section-->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-left">
+        <p class="tagline" id="tagline-en"></p>
+      </div>
+      <div class="hero-right">
+        <img src="./images/hero.png" alt="Hero illustration" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <!--Case study section-->
+  <section class="case-studies-section">
+    <h2 class="case-studies-title">Case Studies</h2>
+    <section class="case-studies reveal">
+      <!-- Project 1: Aurum Studio -->
+      <div class="case book-card">
+        <div class="book-scene">
+          <div class="book">
+            <div class="book-cover">
+              <img src="./images/aurumstudio.jpg" alt="Aurum Studio project cover">
+              <span class="badge">Product</span>
+              <div class="cover-overlay">
+                <span class="cover-kicker">Case Study</span>
+                <h3 class="cover-title">Aurum Studio</h3>
+              </div>
+            </div>
+            <div class="book-page">
+              <div class="case-content">
+                <h3>Aurum Studio</h3>
+                <p class="en">A lo-fi music platform designed to create the ideal 
+                  atmosphere for focused work and creative flow.</p>
+                <ul class="case-tags">
+                  <li>UI/UX</li>
+                  <!--li>Interaction</li-->
+                  <!--li>Design System</li-->
+                  <li>User Research</li>
+                </ul>
+                <a href="./en/case-aurum.html" class="btn cta">View Case Study <span class="arrow">→</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Color Palette Tool -->
+      <div class="case book-card">
+        <div class="book-scene">
+          <div class="book">
+            <div class="book-cover">
+              <img src="./images/Frame.png" alt="Color Palette Tool project cover">
+              <span class="badge">Tool</span>
+              <div class="cover-overlay">
+                <span class="cover-kicker">Case Study</span>
+                <h3 class="cover-title">Color Palette Lab</h3>
+              </div>
+            </div>
+            <div class="book-page">
+              <div class="case-content">
+                <h3>Color Palette Lab</h3>
+                <p>An interactive tool designed to simplify the process of creating 
+                  cohesive and color systems.</p>
+                <ul class="case-tags">
+                  <!--li>Design System</li-->
+                  <!--li>Accessibility</li-->
+                  <li>Prototype</li>
+                  <li>Product Thinking</li>
+                </ul>
+                <a href="./en/case-color.html" class="btn cta">View Case Study <span class="arrow">→</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <!--About section-->
+  <!-- Main about section with reveal animation class for scroll-triggered effects -->
+  <section class="about-section reveal">
+    <!-- Container for the two-column layout (left: text, right: photo) -->
+    <div class="about-container">
+      <!-- Left column: Contains about text and stats -->
+      <div class="about-left">
+  
+        <!-- About text section: Self-introduction with spotlight effect -->
+        <div class="about-text spotlight">
+          <!-- Main heading for the about section -->
+          <h3>About Me</h3>
+          <!-- Self-introduction paragraph with wave emoji and spotlight class -->
+           <p>
+             Hi, I'm Sherry<span class="wave">👋</span>, a UI/UX designer who is 
+             passionate about creating simple, aesthetic, and intuitive interfaces. 
+             I excel at using <strong>user research</strong> to transform designs into solutions that
+              truly solve problems. Ready to build something great together? 
+              <strong>Take a look at my work.</strong>
+              <i data-lucide="arrow-big-up" class="up-arrow-icon" onclick="scrollToCaseStudies()"></i>
+           </p>
+        </div>
+
+        <!-- Interactive stats section: Animated counters -->
+        <div class="stats-container">
+          <!-- First stat: Personal Products Launched -->
+          <div class="stat-item" data-target="2">
+            <span class="stat-number">0</span>
+            <span class="stat-label">Personal Products</span>
+          </div>
+          <!-- Second stat: Blog/Medium Readers -->
+          <div class="stat-item" data-target="100+">
+            <span class="stat-number">0</span>
+            <span class="stat-label">Blog Readers</span>
+          </div>
+          <!-- Third stat: Hours of Learning -->
+          <div class="stat-item" data-target="500+">
+            <span class="stat-number">0</span>
+            <span class="stat-label">Hours of Learning</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right column: Contains profile photo and floating skill bubbles -->
+      <div class="about-right spotlight">
+        <!-- Photo container with hover overlay effect -->
+        <div class="about-photo">
+          <!-- Profile image with click interaction -->
+          <img src="./images/profile.jpg" alt="Sherry photo" class="profile-img">
+          <!-- Overlay that appears on hover -->
+          <div class="photo-overlay">
+            <div class="overlay-content">
+              <h4>Let's Connect!</h4>
+              <p>Click to learn more</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- contact section -->
+  <section class="contact-section">
+    <h2>Send me a message</h2>
+    <form action="https://formspree.io/f/mqayknnq" method="POST" class="contact-form">
+      <div class="form-left">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" required>
+      </div>
+
+      <div class="form-right">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="7" required></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit">Send email</button>
+      </div>
+    </form>
+  </section>
+
+
+
+
+
+    <!--footer section-->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- 左邊 -->
+      <p class="copy">© 2025 All Rights Reserved</p>
+
+      <!-- 右邊 -->
+      <div class="social-icon">
+        <a href="mailto:hello@pinchun.org">
+          <i data-lucide="mail"></i>
+        </a> 
+        <a href="https://www.linkedin.com/in/sherry-pinchun-chen-088210201/" target="_blank">
+          <i data-lucide="linkedin"></i>
+        </a>
+        <a href="https://www.youtube.com/@aurumslab" target="_blank">
+          <i data-lucide="youtube"></i>
+        </a>
+        <a href="https://github.com/aurumslab" target="_blank">
+          <i data-lucide="github"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script>
+  const textEn = "Learning by\nDesigning,\nDesigning by\nLearning.";
+  const taglineEl = document.getElementById("tagline-en");
+
+  let i = 0;
+  const speed = 40;
+
+  function typeEffect() {
+    if (i < textEn.length) {
+      if (textEn.charAt(i) === "\n") {
+        taglineEl.innerHTML += "<br>";
+      } else {
+        taglineEl.innerHTML += textEn.charAt(i);
+      }
+      i++;
+      setTimeout(typeEffect, speed);
+    }
+  }
+
+  // Function to scroll to case studies section
+  function scrollToCaseStudies() {
+    const caseStudiesSection = document.querySelector('.case-studies');
+    if (caseStudiesSection) {
+      caseStudiesSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
+
+  window.onload = typeEffect;
+  </script>
+
+
+  <script>
+  // Simple tilt and spotlight glow for case cards
+  const tiltCards = document.querySelectorAll('.card-tilt');
+  tiltCards.forEach((card) => {
+    let rect;
+    function update(e) {
+      rect = rect || card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const rx = ((y / rect.height) - 0.5) * -6; // rotateX
+      const ry = ((x / rect.width) - 0.5) * 6;   // rotateY
+      card.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+      card.style.setProperty('--mx', `${x}px`);
+      card.style.setProperty('--my', `${y}px`);
+    }
+    function reset() {
+      rect = null;
+      card.style.transform = 'rotateX(0) rotateY(0)';
+      card.classList.remove('is-tilting');
+    }
+    card.addEventListener('mouseenter', () => card.classList.add('is-tilting'));
+    card.addEventListener('mousemove', update);
+    card.addEventListener('mouseleave', reset);
+  });
+  window.addEventListener("scroll", () => {
+    const footer = document.querySelector("footer");
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const pageHeight = document.body.scrollHeight;
+
+    if (scrollPosition >= pageHeight - 50) {
+      footer.classList.add("show");   // 滾到底 → 翻開
+    } else {
+      footer.classList.remove("show");
+    }
+  });
+  </script>
+
+
+  <script>
+  const logo = document.querySelector(".logo");
+  const logoText = document.querySelector(".logo h1");
+  const logoSub = document.querySelector(".logo p");
+  const logoImg = document.querySelector(".logo-img");
+  const lang = document.querySelector(".lang-switch");
+
+  // Logo 座標
+  let targetLogoX = 0, currentLogoX = 0;
+  let targetLogoY = 0, currentLogoY = 0;
+
+  // Lang 座標
+  let targetLangX = 0, currentLangX = 0;
+  let targetLangY = 0, currentLangY = 0;
+
+  const ease = 0.08;
+
+  window.addEventListener("scroll", () => {
+    // Only apply scroll animations on screens wider than 768px
+    if (window.innerWidth > 768) {
+      if (window.scrollY > 80) {
+        // 平移
+        targetLogoX = -160;
+        targetLogoY = -60;
+        targetLangX = 160;
+        targetLangY = -60;
+
+        // Logo 切換
+        logoText.style.opacity = "0";
+        logoSub.style.opacity = "0";
+        logoImg.style.opacity = "1";
+      } else {
+        targetLogoX = 0;
+        targetLogoY = 0;
+        targetLangX = 0;
+        targetLangY = 0;
+
+        logoText.style.opacity = "1";
+        logoSub.style.opacity = "1";
+        logoImg.style.opacity = "0";
+      }
+      //RWD for header move
+    } else {
+      // RWD behavior for narrow screens
+      if (window.scrollY > 80) {
+        // Move profile icon up and left
+        targetLogoX = -70;
+        targetLogoY = -50;
+        // Move language switch right and up
+        targetLangX = 20;
+        targetLangY = -50;
+
+        // Logo 切換
+        logoText.style.opacity = "0";
+        logoSub.style.opacity = "0";
+        logoImg.style.opacity = "1";
+      } else {
+        targetLogoX = 0;
+        targetLogoY = 0;
+        targetLangX = 0;
+        targetLangY = 0;
+
+        logoText.style.opacity = "1";
+        logoSub.style.opacity = "1";
+        logoImg.style.opacity = "0";
+      }
+    }
+  });
+
+  function animate() {
+    // 緩動公式
+    currentLogoX += (targetLogoX - currentLogoX) * ease;
+    currentLogoY += (targetLogoY - currentLogoY) * ease;
+    currentLangX += (targetLangX - currentLangX) * ease;
+    currentLangY += (targetLangY - currentLangY) * ease;
+
+    // 更新樣式
+    logo.style.transform = `translate(${currentLogoX}px, ${currentLogoY}px)`;
+    lang.style.transform = `translate(${currentLangX}px, ${currentLangY}px)`;
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+  </script>
+
+  <script>
+  const body = document.querySelector("body.spotlight");
+
+  body.addEventListener("mousemove", (e) => {
+    body.style.setProperty("--x", `${e.clientX}px`);
+    body.style.setProperty("--y", `${e.clientY}px`);
+    body.classList.add("active");
+  });
+
+  body.addEventListener("mouseleave", () => {
+    body.classList.remove("active");
+  });
+
+  // Reveal 效果 (保留原本的)
+  const reveals = document.querySelectorAll(".reveal");
+
+  function revealOnScroll() {
+    reveals.forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        el.classList.add("show");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+
+  </script>
+  <!-- Interactive About Section Scripts -->
+  <script>
+    // ===== ABOUT SECTION SCROLL ANIMATION =====
+    // Get reference to the about section element
+    const aboutSection = document.querySelector('.about-section');
+
+    // Create Intersection Observer to detect when about section comes into view
+    const aboutObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Add 'show' class to trigger CSS animations when section is visible
+          aboutSection.classList.add('show');
+          // Stop observing this element after animation is triggered
+          aboutObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.8, // Trigger when 80% of section is visible in viewport
+      rootMargin: '0px 0px 0px 0px' // No margin offset
+    });
+
+    // Start observing the about section if it exists
+    if (aboutSection) {
+      aboutObserver.observe(aboutSection);
+    }
+
+    // ===== ANIMATED COUNTER FUNCTION =====
+    // Function to animate numbers from 0 to target value
+    function animateCounter(element, target) {
+      let current = 0; // Start from 0
+      const increment = target / 100; // Calculate increment for smooth animation
+      const timer = setInterval(() => {
+        current += increment; // Add increment to current value
+        if (current >= target) {
+          current = target; // Ensure we don't exceed target
+          clearInterval(timer); // Stop the animation
+        }
+        element.textContent = Math.floor(current); // Update display with rounded number
+      }, 20); // Update every 20ms for smooth animation
+    }
+
+    // ===== STATS ANIMATION OBSERVER =====
+    // Create observer to trigger stats animation when stats container is visible
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Get all stat items within the visible container
+          const statItems = entry.target.querySelectorAll('.stat-item');
+          statItems.forEach(item => {
+            // Get the number element and target value for each stat
+            const numberElement = item.querySelector('.stat-number');
+            const target = parseInt(item.dataset.target); // Get target from data-target attribute
+            animateCounter(numberElement, target); // Start animation
+          });
+          statsObserver.unobserve(entry.target); // Stop observing after animation
+        }
+      });
+    });
+
+    // Get stats container and start observing if it exists
+    const statsContainer = document.querySelector('.stats-container');
+    if (statsContainer) {
+      statsObserver.observe(statsContainer);
+    }
+
+
+    // ===== PHOTO OVERLAY INTERACTION =====
+    // Get profile photo element
+    const profilePhoto = document.querySelector('.profile-img');
+    if (profilePhoto) {
+      // Add click event listener to profile photo
+      profilePhoto.addEventListener('click', () => {
+        // Create ripple effect element
+        const ripple = document.createElement('div');
+        // Style the ripple with inline CSS
+        ripple.style.cssText = `
+          position: absolute;
+          border-radius: 50%;
+          background: rgba(255,255,255,0.3);
+          transform: scale(0);
+          animation: ripple 0.6s linear;
+          pointer-events: none;
+        `;
+        
+        // Get photo dimensions and click position
+        const rect = profilePhoto.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height); // Use larger dimension for ripple size
+        ripple.style.width = ripple.style.height = size + 'px'; // Set ripple size
+        // Position ripple at click location
+        ripple.style.left = (event.clientX - rect.left - size/2) + 'px';
+        ripple.style.top = (event.clientY - rect.top - size/2) + 'px';
+        
+        // Ensure parent has relative positioning for absolute ripple
+        profilePhoto.parentElement.style.position = 'relative';
+        profilePhoto.parentElement.appendChild(ripple); // Add ripple to DOM
+        
+        setTimeout(() => ripple.remove(), 600); // Remove ripple after animation
+      });
+    }
+
+    // ===== CSS ANIMATION DEFINITION =====
+    // Create and inject CSS keyframes for ripple animation
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes ripple {
+        to {
+          transform: scale(4); // Scale up to 4x size
+          opacity: 0; // Fade out
+        }
+      }
+    `;
+    document.head.appendChild(style); // Add to document head
+  </script>
+    
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+  </script>
+
+</body>

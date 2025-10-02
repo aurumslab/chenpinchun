@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>作品集 | Color Playground</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Chiron+GoRound+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="case-color-zh.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="case-header">
+    <div class="header-container">
+      <div class="header-left">
+        <a href="index.html" class="logo-link">
+          <img src="../images/logo.png" alt="Logo" class="header-logo">
+        </a>
+      </div>
+      
+      <div class="header-right">
+        <div class="language-switch">
+          <a href="case-color-zh.html" class="lang-btn">中</a>
+          <span class="lang-separator">|</span>
+          <a href="../en/case-color.html" class="lang-btn active">EN</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="color-master-hero">
+    <div class="hero-left">
+      <h1>Color Playground -</h1>
+      <p>快速生成和諧色彩，<br>輕鬆打造品牌色盤。</p>
+    </div>
+    <div class="hero-right">
+      <div class="hero-images">
+        <img src="../images/case-color/hero1.png" alt="Color Master hero 1" class="hero-img">
+        <!--img src="../images/case-color/hero2.png" alt="Color Master hero 2" class="hero-img2"-->
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem & Solution Section -->
+  <section class="problem-solution-section">
+    <div class="problem-section">
+      <h2>問題</h2>
+      <p>平面設計師在生成品牌的配色方案，或 UI 設計師在生成介面配色時，需要同時檢查 WCAG 對比度，有時會遇到現有工具分散且操作繁瑣的問題，
+        因為現有工作流程需要使用多個工具並手動計算，這可能會造成最後生成配色時無法達到無障礙標準，或是缺乏和諧度，耗時又容易出錯。</p>
+         
+        <!-- User Flow Section -->
+      <h2>使用者流程</h2>
+        <ol class="user-flow-list">
+              <li>輸入或選擇主色。</li>
+              <li>選擇配色規則和階數。</li>
+              <li>點擊「生成」來建立色彩表格。</li>
+              <li>查看色彩調色盤，檢查對比度，並預覽 UI 元件。</li>
+              <li>下載 CSS/JSON 程式碼或直接分享連結。</li>
+        </ol>
+        
+        <div class="user-flow-image">
+          <img src="../images/case-color/flow.png" alt="User Flow Diagram" class="flow-img">
+        </div>
+    </div>
+
+    <div class="solution-section">
+      <h2>解決方案</h2>
+      <p>我設計了 Color Playground，一個簡化色彩調色盤生成的工具，同時確保可用性與無障礙標準。</p>
+
+      <div class="solution-points">
+        <div class="solution-point">
+          <h3>1. 配色規則</h3>
+          <p>為了不同的配色用途，Color Playground 提供了四種配色規則：</p>
+          <ul>
+            <li><strong>單色</strong> – 同色系的深淺變化。</li>
+            <li><strong>類似色</strong> – 色輪上相鄰的色彩。</li>
+            <li><strong>互補色</strong> – 色輪上高對比的色彩。</li>
+            <li><strong>三色</strong> – 色輪上均勻分布的三色。</li>
+          </ul>
+          <p>確保設計師可以在大膽探索的同時建立安全的組合。</p>
+        </div>
+        
+        <div class="solution-point">
+          <h3>2. 自動擴展調色盤</h3>
+          <p>選擇配色規則並點擊生成後，工具會自動生成完整調色盤，其中包括：</p>
+          <ul>
+            <li>主色</li>
+            <li>中性色調 (灰色、背景、邊框)</li>
+            <li>語意色彩 (成功、警告、錯誤)</li>
+            <li>互動狀態 (懸停、激活、禁用)</li>
+          </ul>
+          <p>可以節省設計師手動建立 UI 配色方案的時間。</p>
+        </div>
+        <div class="solution-point">
+          <h3>3. 無障礙整合</h3>
+          <p>系統會檢查 WCAG 對比度，並標示是否符合 AA 或 AAA 標準。這可以減少在設計過程中無法達到無障礙標準的問題。</p>
+        </div>
+        
+        <!--div class="solution-point">
+          <h3>5. Export & Sharing</h3>
+          <p>Designers can instantly export palettes as CSS variables or JSON files, making it easy to plug into design systems or codebases. A shareable URL also allows quick collaboration with teammates.</p>
+        </!--div-->
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Images Section -->
+  <section class="solution-images-section">
+    <div class="solution-images-container">
+      <img src="../images/case-color/palette.png" alt="Color Palette" class="palette-img">
+      <img src="../images/case-color/pen.png" alt="Design Pen" class="pen-img">
+    </div>
+  </section>
+
+  <!-- Key Features Section -->
+  <section class="features-section">
+    <div class="features-container">
+      <h2>關鍵功能</h2>
+      <ul class="key-features-list">
+        <li><strong>對比度檢查:</strong> 自動標示 AA / AAA 可讀性。</li>
+        <li><strong>語意 & 互動色彩生成:</strong> 自動生成按鈕、卡片和文字等配色。</li>
+        <li><strong>導出選項:</strong> CSS 變數、JSON 程式碼和分享連結。</li>
+        <li><strong>即時 UI 預覽:</strong> 視覺化按鈕、卡片和標籤等元件。</li>
+        <li><strong>快速品牌調色盤生成:</strong> 支援單色、類似色、互補色和三色方案。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Prototyping Video Section -->
+  <section class="prototyping-section">
+    <div class="prototyping-container">
+      <video controls class="prototyping-video">
+        <source src="../images/case-color/prototyping.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- User Flow Section >
+  <section-- class="user-flow-section">
+    <div class="user-flow-container">
+      <h2>User Flow</h2>
+      <ol class="user-flow-list">
+        <li>Input or select a primary color.</li>
+        <li>Choose a harmony rule and step increments.</li>
+        <li>Click "Generate" to create the color table.</li>
+        <li>View color swatches, check contrast, and preview UI components.</li>
+        <li>Download CSS/JSON or share via URL.</li>
+      </ol>
+    </div>
+  </section-->
+
+  <script>
+    // Add any interactive functionality here if needed
+  </script>
+</body>
+</html>
