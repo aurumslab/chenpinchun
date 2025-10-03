@@ -206,12 +206,13 @@
     transform: scale(1.02);
   }
   
-  .user-flow-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px;
-    text-align: left;
-  }
+.user-flow-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: left;
+  display: none; /* Hidden on desktop, shown on mobile */
+}
   
   .user-flow-container {
     max-width: 100%;
@@ -401,78 +402,111 @@
   }
   
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .color-master-hero,
-    .problem-solution-section {
-      grid-template-columns: 1fr;
-      gap: 40px;
-      padding: 40px 20px;
-    }
-    
-    .color-master-hero {
-      padding: 100px 20px 40px;
-    }
-    
-    .hero-left h1 {
-      font-size: 2.5rem;
-    }
-    
-    .hero-left p {
-      font-size: 1.2rem;
-    }
-    
-    .hero-images {
-      grid-template-columns: 1fr;
-      gap: 15px;
-    }
-    
-    .computer-section {
-      padding: 20px;
-    }
-    
-    .user-flow-section {
-      padding: 20px;
-    }
-    
-    .user-flow-container h2 {
-      font-size: 1.5rem;
-    }
-    
-    .user-flow-list {
-      font-size: 1rem;
-    }
-    
-    .features-section {
-      padding: 20px;
-    }
-    
-    .features-container {
-      grid-template-columns: 1fr;
-      gap: 40px;
-    }
-    
-    .features-container h2 {
-      font-size: 1.5rem;
-    }
-    
-    .solution-images-container {
-      flex-direction: column;
-      gap: 30px;
-    }
-    
-    .key-features-list {
-      font-size: 1rem;
-    }
-    
-    .prototyping-section {
-      padding: 20px;
-    }
-    
-    .prototyping-video {
-      border-radius: 4px;
-    }
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Create a grid layout for mobile reordering */
+  body {
+    display: grid;
+    grid-template-areas: 
+      "hero"
+      "problem"
+      "userflow"
+      "features"
+      "prototyping";
+    grid-template-rows: auto auto auto auto auto;
   }
+  
+  .color-master-hero {
+    grid-area: hero;
+    padding: 100px 20px 40px;
+  }
+  
+  .problem-solution-section {
+    grid-area: problem;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+  
+  .solution-images-section {
+    display: none; /* Hide solution images section on mobile */
+  }
+  
+  .user-flow-section {
+    grid-area: userflow;
+    padding: 20px;
+    display: block !important;
+  }
+  
+  .features-section {
+    grid-area: features;
+    padding: 20px;
+    margin-top: 300px; /* Add space between User Flow and Features */
+    background: rgba(247, 251, 255, 0.95); /* Semi-transparent background */
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .prototyping-section {
+    grid-area: prototyping;
+    padding: 20px;
+  }
+  
+  .hero-left h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-left p {
+    font-size: 1.2rem;
+  }
+  
+  .hero-images {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .computer-section {
+    padding: 20px;
+  }
+  
+  .user-flow-container h2 {
+    font-size: 2rem;
+  }
+  
+  .user-flow-list {
+    font-size: 1rem;
+  }
+  
+  .features-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .features-container h2 {
+    font-size: 1.5rem;
+  }
+  
+  .solution-images-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .key-features-list {
+    font-size: 1rem;
+  }
+  
+  .prototyping-video {
+    margin-top: 20px;
+    border-radius: 4px;
+  }
+  
+  /* Hide User Flow content from problem section on mobile */
+  .problem-section h2:last-of-type,
+  .problem-section .user-flow-list,
+  .problem-section .user-flow-image {
+    display: none;
+  }
+}
   
   @media (max-width: 480px) {
     .hero-left h1 {

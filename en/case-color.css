@@ -211,6 +211,7 @@ body::after {
   margin: 0 auto;
   padding: 40px;
   text-align: left;
+  display: none; /* Hidden on desktop, shown on mobile */
 }
 
 .user-flow-container {
@@ -404,15 +405,52 @@ body::after {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .color-master-hero,
+  /* Create a grid layout for mobile reordering */
+  body {
+    display: grid;
+    grid-template-areas: 
+      "hero"
+      "problem"
+      "userflow"
+      "features"
+      "prototyping";
+    grid-template-rows: auto auto auto auto auto;
+  }
+  
+  .color-master-hero {
+    grid-area: hero;
+    padding: 100px 20px 40px;
+  }
+  
   .problem-solution-section {
+    grid-area: problem;
     grid-template-columns: 1fr;
     gap: 40px;
     padding: 40px 20px;
   }
   
-  .color-master-hero {
-    padding: 100px 20px 40px;
+  .solution-images-section {
+    display: none; /* Hide solution images section on mobile */
+  }
+  
+  .user-flow-section {
+    grid-area: userflow;
+    padding: 20px;
+    display: block !important;
+  }
+  
+  .features-section {
+    grid-area: features;
+    padding: 20px;
+    margin-top: 300px; /* Add space between User Flow and Features */
+    background: rgba(247, 251, 255, 0.95); /* Semi-transparent background */
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .prototyping-section {
+    grid-area: prototyping;
+    padding: 20px;
   }
   
   .hero-left h1 {
@@ -432,20 +470,12 @@ body::after {
     padding: 20px;
   }
   
-  .user-flow-section {
-    padding: 20px;
-  }
-  
   .user-flow-container h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   
   .user-flow-list {
     font-size: 1rem;
-  }
-  
-  .features-section {
-    padding: 20px;
   }
   
   .features-container {
@@ -454,7 +484,7 @@ body::after {
   }
   
   .features-container h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   
   .solution-images-container {
@@ -466,12 +496,16 @@ body::after {
     font-size: 1rem;
   }
   
-  .prototyping-section {
-    padding: 20px;
+  .prototyping-video {
+    margin-top: 20px;
+    border-radius: 4px;
   }
   
-  .prototyping-video {
-    border-radius: 4px;
+  /* Hide User Flow content from problem section on mobile*/
+  .problem-section h2:last-of-type,
+  .problem-section .user-flow-list,
+  .problem-section .user-flow-image {
+    display: none;
   }
 }
 

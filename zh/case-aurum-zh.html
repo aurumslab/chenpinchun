@@ -506,8 +506,8 @@
         const titleDisappearScrollPoint = 500; // When scrolled 370px (80px earlier)
         const isMobile = window.innerWidth <= 900; // Check if screen is narrow
         
-        // When brief section reaches 100px from top, make icon fixed (both desktop and mobile)
-        if (briefRect.top <= triggerPoint) {
+        // When brief section reaches 100px from top, make icon fixed (desktop only)
+        if (briefRect.top <= triggerPoint && !isMobile) {
           briefIconContainer.classList.add('fixed-icon');
           briefIconContainer.classList.remove('hidden-icon');
         } else {

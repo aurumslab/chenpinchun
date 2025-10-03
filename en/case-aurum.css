@@ -1003,7 +1003,6 @@ transition: top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.1s ease;
     padding: 25px;
     order: 1;
     width: 100%;
-    max-width: 100%;
   }
   
   .right-column-users {
@@ -1029,6 +1028,7 @@ transition: top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.1s ease;
   }
 }
 
+
 @media (max-width: 600px) {
   .container-users {
     padding: 0 15px;
@@ -1037,12 +1037,15 @@ transition: top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.1s ease;
   
   .left-column-users {
     padding: 20px;
+    width: 90%;
+    max-width: 90%;
   }
   
   .left-column-users h2 {
     font-size: 16px;
   }
   
+
   .left-column-users p {
     font-size: 14px;
   }
