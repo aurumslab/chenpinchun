@@ -608,6 +608,11 @@ transition: top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.1s ease;
   visibility: hidden;
 }
 
+.container-prototyping.hidden-title .left-column-prototyping {
+  opacity: 0;
+  visibility: hidden;
+}
+
 /* Fixed state for prototyping title box */
 .container-prototyping.fixed-icon .left-column-prototyping {
   position: fixed;
@@ -1053,7 +1058,7 @@ transition: top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.1s ease;
 
 @media (max-width: 600px) {
   .container-users {
-    padding: 0 25px;
+    padding: 0 20px;
     margin: 30px auto 30px auto;
   }
   
@@ -2415,6 +2420,11 @@ transition: top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.1s ease;
   left: calc(25% + 50px - 30px);
 }
 
+.container-prototyping.hidden-icon::after {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .left-column-prototyping {
   background-color: #FFE5B4;
   padding: 30px 25px;
@@ -3364,6 +3374,20 @@ transition: top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.1s ease;
   
   .right-column-impact li {
     font-size: 14px;
+  }
+}
+
+/* Hide prototyping title box when scrolling past 6000px on screens < 1100px */
+@media (max-width: 1100px) {
+  .container-prototyping.hide-title .left-column-prototyping {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  /* Reduce gap between impact title box and right side content */
+  .container-impact {
+    gap: 60px; /* Reduce gap from 120px to 60px */
   }
 }
   

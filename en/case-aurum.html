@@ -685,6 +685,8 @@
        if (prototypingSection && prototypingIconContainer) {
          const prototypingRect = prototypingSection.getBoundingClientRect();
          const triggerPoint = 100; // 100px from top of screen
+         const titleDisappearScrollPoint = 7500; // When scrolled 7500px
+         const disappearScrollPoint = 7400; // When scrolled 8000px (500px later than title)
          const isMobile = window.innerWidth <= 900; // Check if screen is narrow
          
         // When prototyping section reaches 100px from top, make icon fixed (only on desktop)
@@ -693,6 +695,26 @@
           prototypingIconContainer.classList.remove('hidden-icon');
         } else {
           prototypingIconContainer.classList.remove('fixed-icon');
+          prototypingIconContainer.classList.remove('hidden-icon');
+        }
+        
+        // Only hide title box and icon on desktop screens (wider than 900px)
+        if (!isMobile) {
+          // When scrolled 7500px, hide title box
+          if (scrollTop >= titleDisappearScrollPoint) {
+            prototypingIconContainer.classList.add('hidden-title');
+          } else {
+            prototypingIconContainer.classList.remove('hidden-title');
+          }
+          
+          // When scrolled 8000px, hide icon
+          if (scrollTop >= disappearScrollPoint) {
+            prototypingIconContainer.classList.add('hidden-icon');
+            prototypingIconContainer.classList.remove('fixed-icon');
+          }
+        } else {
+          // On mobile, ensure title box and icon stay visible
+          prototypingIconContainer.classList.remove('hidden-title');
           prototypingIconContainer.classList.remove('hidden-icon');
         }
        }

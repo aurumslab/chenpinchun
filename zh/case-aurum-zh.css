@@ -3266,6 +3266,13 @@ transition: top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.1s ease;
     font-size: 14px;
   }
 }
+
+/* Reduce gap between impact title box and right side content on screens < 1100px */
+@media (max-width: 1100px) {
+  .container-impact {
+    gap: 60px; /* Reduce gap from 120px to 60px */
+  }
+}
   
 
   
