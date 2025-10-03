@@ -1007,6 +1007,7 @@ transition: top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.1s ease;
   
   .right-column-users {
     order: 2;
+    margin-right: 0; /* Remove right margin on mobile */
   }
   
   .left-column-users h2 {
