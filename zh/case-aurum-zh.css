@@ -324,6 +324,21 @@ body::before {
 
 /* Responsive Design */
 
+/* Mobile Header Adjustments */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 20px;
+  }
+  
+  .header-left {
+    margin-left: 10px; /* Move profile icon more to the left */
+  }
+  
+  .header-right {
+    margin-right: 10px; /* Move language switch more to the right */
+  }
+}
+
 @media (max-width: 900px) {
   .container {
     grid-template-columns: 1fr;
