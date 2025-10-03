@@ -439,14 +439,15 @@ body::after {
     display: block !important;
   }
   
-  .features-section {
-    grid-area: features;
-    padding: 20px;
-    margin-top: 300px; /* Add space between User Flow and Features */
-    background: rgba(247, 251, 255, 0.95); /* Semi-transparent background */
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
-  }
+   .features-section {
+     grid-area: features;
+     padding: 20px;
+     margin-top: 300px; /* Add space between User Flow and Features */
+     background: rgba(247, 251, 255, 0.95); /* Semi-transparent background */
+     border-radius: 12px;
+     backdrop-filter: blur(10px);
+     text-align: left; /* Align to left on mobile */
+   }
   
   .prototyping-section {
     grid-area: prototyping;

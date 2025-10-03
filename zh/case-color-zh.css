@@ -445,6 +445,7 @@
     background: rgba(247, 251, 255, 0.95); /* Semi-transparent background */
     border-radius: 12px;
     backdrop-filter: blur(10px);
+    margin-left: 0;
   }
   
   .prototyping-section {
@@ -483,7 +484,7 @@
   }
   
   .features-container h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   
   .solution-images-container {

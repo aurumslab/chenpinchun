@@ -1035,12 +1035,6 @@ transition: top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.1s ease;
     margin: 30px auto 30px auto;
   }
   
-  .left-column-users {
-    padding: 20px;
-    width: 90%;
-    max-width: 90%;
-  }
-  
   .left-column-users h2 {
     font-size: 16px;
   }
@@ -1093,6 +1087,12 @@ transition: top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.1s ease;
   
   .persona-section li::before {
     color: #333;
+  }
+}
+
+@media (max-width: 500px) {
+  .left-column-users {
+    padding: 20px 30px;
   }
 }
 
