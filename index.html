@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sherry Chen | Portfolio</title>
+  <title>Chen Pin Chun</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Chiron+GoRound+TC:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="en/style.css">
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -21,8 +21,8 @@
     <a href="https://github.com/aurumslab" target="_blank" aria-label="GitHub">
       <i data-lucide="github"></i>
     </a>
-    <a href="https://www.youtube.com/@aurumslab" target="_blank" aria-label="YouTube">
-      <i data-lucide="youtube"></i>
+    <a href="https://www.instagram.com/99___08___09/" target="_blank" aria-label="Instagram">
+      <i data-lucide="instagram"></i>
     </a>
   </div>
 
@@ -151,7 +151,7 @@
           <!-- First stat: Personal Products Launched -->
           <div class="stat-item" data-target="2">
             <span class="stat-number">0</span>
-            <span class="stat-label">Personal Products</span>
+            <span class="stat-label">Personal Projects</span>
           </div>
           <!-- Second stat: Blog/Medium Readers -->
           <div class="stat-item" data-target="100+">
@@ -227,8 +227,8 @@
         <a href="https://www.linkedin.com/in/sherry-pinchun-chen-088210201/" target="_blank">
           <i data-lucide="linkedin"></i>
         </a>
-        <a href="https://www.youtube.com/@aurumslab" target="_blank">
-          <i data-lucide="youtube"></i>
+        <a href="https://www.instagram.com/99___08___09/" target="_blank" aria-label="Instagram">
+          <i data-lucide="instagram"></i>
         </a>
         <a href="https://github.com/aurumslab" target="_blank">
           <i data-lucide="github"></i>
@@ -458,15 +458,23 @@
     // Function to animate numbers from 0 to target value
     function animateCounter(element, target) {
       let current = 0; // Start from 0
-      const increment = target / 100; // Calculate increment for smooth animation
+      const targetNumber = typeof target === 'string' ? parseInt(target) : target; // Extract number for animation
+      const increment = targetNumber / 100; // Calculate increment for smooth animation
       const timer = setInterval(() => {
         current += increment; // Add increment to current value
-        if (current >= target) {
-          current = target; // Ensure we don't exceed target
+    if (current >= targetNumber) {
+          current = targetNumber; // Ensure we don't exceed target
           clearInterval(timer); // Stop the animation
         }
         element.textContent = Math.floor(current); // Update display with rounded number
       }, 20); // Update every 20ms for smooth animation
+      
+      // Add "+" to final display if original target had it
+      if (typeof target === 'string' && target.includes('+')) {
+        setTimeout(() => {
+          element.textContent = Math.floor(targetNumber) + '+';
+        }, targetNumber / increment * 20 + 100); // Wait for animation to complete
+      }
     }
 
     // ===== STATS ANIMATION OBSERVER =====
@@ -479,7 +487,8 @@
           statItems.forEach(item => {
             // Get the number element and target value for each stat
             const numberElement = item.querySelector('.stat-number');
-            const target = parseInt(item.dataset.target); // Get target from data-target attribute
+            const targetString = item.dataset.target; // Get target string from data-target attribute
+            const target = targetString.includes('+') ? targetString : parseInt(targetString); // Handle both numbers and numbers with +
             animateCounter(numberElement, target); // Start animation
           });
           statsObserver.unobserve(entry.target); // Stop observing after animation
