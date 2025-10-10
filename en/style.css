@@ -112,7 +112,6 @@ body.spotlight.active::after {
   transform: scale(1.2);        /* 微放大 */
 }
 
-/* 滾動後更清晰的玻璃效果 */
 .contact-sidebar.scrolled {
   background: rgba(255,255,255,0.75);
   backdrop-filter: blur(10px);
