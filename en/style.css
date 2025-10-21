@@ -260,6 +260,50 @@ body.spotlight.active::after {
   .hero .tagline {
     font-size: 2.2rem;
   }
+  
+  #tagline-en {
+    font-size: 2.2rem;
+    margin-top: 120px;
+    min-height: 240px;
+  }
+  
+  .tagline::after {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .tagline {
+    font-size: 1.8rem;
+  }
+  
+  #tagline-en {
+    font-size: 1.8rem;
+    margin-top: 80px;
+    min-height: 200px;
+    margin-left: -5px;
+  }
+  
+  .tagline::after {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero .tagline {
+    font-size: 1.5rem;
+  }
+  
+  #tagline-en {
+    font-size: 1.5rem;
+    margin-top: 60px;
+    min-height: 180px;
+    margin-left: 0px;
+  }
+  
+  .tagline::after {
+    font-size: 1.3rem;
+  }
 }
 
 .hero-container {

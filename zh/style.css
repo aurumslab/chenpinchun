@@ -266,7 +266,52 @@ body.spotlight.active::after {
 
 @media (max-width: 768px) {
   .hero .tagline {
+    font-size: 2.8rem;
+  }
+  
+  #tagline-en {
+    font-size: 2.8rem;
+    margin-top: 150px;
+    min-height: 240px;
+    margin-left: 10px;
+  }
+  
+  .tagline::after {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .tagline {
     font-size: 2.2rem;
+  }
+  
+  #tagline-en {
+    font-size: 2.2rem;
+    margin-top: 100px;
+    min-height: 200px;
+    margin-left: 5px;
+  }
+  
+  .tagline::after {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero .tagline {
+    font-size: 1.8rem;
+  }
+  
+  #tagline-en {
+    font-size: 1.8rem;
+    margin-top: 80px;
+    min-height: 180px;
+    margin-left: 0px;
+  }
+  
+  .tagline::after {
+    font-size: 1.5rem;
   }
 }
 
