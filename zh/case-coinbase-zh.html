@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>作品集 | Coinbase Redesign</title>
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Chiron+GoRound+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="case-coinbase-zh.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="case-header">
+    <div class="header-container">
+      <div class="header-left">
+        <a href="../index.html" class="logo-link">
+          <img src="../images/logo.png" alt="Logo" class="header-logo">
+        </a>
+      </div>
+      
+      <div class="header-right">
+        <div class="language-switch">
+          <a href="case-coinbase-zh.html" class="lang-btn active">中</a>
+          <span class="lang-separator">|</span>
+          <a href="../en/case-coinbase.html" class="lang-btn">EN</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">優化 Coinbase<br> 提升使用者體驗</h1>
+        <p class="hero-subtitle">優化投資組合和交易介面的行動端應用程式的設計，提升資訊清晰度和易用性</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section class="problem-section">
+    <div class="container">
+      <div class="section-content">
+        <h2 class="section-title">當前問題</h2>
+        <div class="problem-text">
+          <p>Coinbase 在加密貨幣市場中具有領先地位，但根據使用者回饋顯示行動端的交易體驗存在部分問題。使用者經常發現行動端的交易介面視覺雜亂且難以理解，讓執行交易存在磨擦，而投資組合介面資訊呈現不清，使得使用者難以快速理解總餘額、資產分配和成長趨勢。</p>
+          
+          <p>透過使用者研究，我識別出兩個需要立即改善的功能區塊，分別為投資組合介面和交易介面：</p>
+          
+          <ul>
+            <strong>投資組合介面 — 數據視覺化不佳</strong><br>
+            • 缺乏清晰的圖形表示（如圓餅圖或趨勢線）<br>
+            • 難以快速評估績效趨勢或資產分配<br>
+            • 使用者參與度低</li><br><br>
+            
+            <strong>交易頁面 — 入口點不明確</strong><br>
+            • 使用者經常不確定如何下單，需要經過多次嘗試才找到下單入口。<br>
+            • 使用者在解讀交易資訊時需要花較多時間。<br>
+          </ul>
+          
+          <p>作為設計師，我的任務是：重新設計投資組合和交易介面，創造清晰的視覺層次、直觀的使用者流程，以及更易於使用的交易體驗，同時保持 Coinbase 的專業與可信度。</p>
+          
+          <div class="challenge-images">
+            <div class="challenge-image-item challenge-with-description">
+              <div class="challenge-image-container">
+                <img src="../images/case-coin/challenge1.jpg" alt="投資組合頁面挑戰">
+              </div>
+              <div class="challenge-description">
+                <h4>投資組合介面 — 數據視覺化不佳</h4>
+                <p>目前的投資組合介面層次不清，且缺乏視覺提示，讓使用者比較難快速理解資產餘額、分配狀況和資產成長趨勢等，這樣的呈現降低了使用者參與度。</p>
+              </div>
+            </div>
+            
+            <div class="challenge-bottom-images">
+              <div class="challenge-image-item">
+                <img src="../images/case-coin/challenge2.png" alt="交易頁面挑戰">
+              </div>
+              <div class="challenge-image-item challenge-with-description">
+                <div class="challenge-image-container">
+                  <img src="../images/case-coin/challenge3.png" alt="使用者體驗挑戰">
+                </div>
+                <div class="challenge-description">
+                  <h4>交易介面 — 入口點不明確</h4>
+                  <p>在交易頁面上，使用者無法快速進行下單和解讀關鍵的市場資訊，部分使用者需要經過多次的嘗試才能進行下單。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Solution Section -->
+  <section class="solution-section">
+    <div class="container">
+      <div class="section-content">
+        <h2 class="section-title">解決方案</h2>
+        <div class="solution-content">
+          <div class="solution-text">
+            <p class="solution-intro">我運用手繪的方式大致重新設計投資組合和交易介面來解決關鍵的易用性問題。解決方案專注於清晰的層次結構、更好的數據視覺化和簡化的使用者流程。</p>
+            
+            <div class="principles">
+              <div class="principle principle-1">
+                <h3>投資組合頁面：</h3>
+                <ul>
+                  <li><strong>清晰的層次結構：</strong>總餘額和關鍵統計數據在視覺上優先顯示，增加資訊層次，讓使用者在獲得更多資訊的同時保持介面乾淨。</li>
+                  <li><strong>數據視覺化：</strong>迷你趨勢線、圓餅圖或長條圖來顯示績效和資產分配。</li>
+                  <!--li><strong>微互動：</strong>點擊切換詳細資訊、懸停或滑動效果來查看趨勢。</！li-->
+                </ul>
+              </div>
+              
+              <div class="principle principle-2">
+                <h3>交易頁面：</h3>
+                <ul>
+                  <li><strong>可讀的市場數據：</strong>重新設計市場資訊，使其更清晰且易於掃描。</li>
+                  <!--li><strong>深度圖表切換：</strong>添加深度圖表，使用者可以切換以獲得更好的市場洞察。</!--li-->
+                  <li><strong>一步下單頁面：</strong>引入直接下單頁面，讓使用者一進入交易介面後可以直接進行交易。</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-content">
+        <h2 class="section-title">設計流程</h2>
+        <div class="process-content">
+          <div class="process-steps">
+            <div class="step step-1">
+              <div class="step-number">01</div>
+              <div class="step-content">
+                <h3>使用者研究與分析</h3>
+                <p>與 5+ 位 Coinbase 使用者進行訪談，了解使用者痛點和使用行為。</p>
+              </div>
+            </div>
+            
+            <div class="step step-2">
+              <div class="step-number">02</div>
+              <div class="step-content">
+                <h3>資訊架構</h3>
+                <p>基於使用者優先級和心理模型重新構建導航和內容層次。</p>
+              </div>
+            </div>
+            
+            <div class="step step-3">
+              <div class="step-number">03</div>
+              <div class="step-content">
+                <h3>線框圖製作</h3>
+                <p>創建低保真線框圖和互動原型來測試不同的方法。</p>
+              </div>
+            </div>
+            
+            <div class="step step-4">
+              <div class="step-number">04</div>
+              <div class="step-content">
+                <h3>視覺設計與測試</h3>
+                <p>開發高保真設計並與目標使用者進行易用性測試。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wireframe Section -->
+  <section class="wireframe-section">
+    <div class="container">
+      <div class="section-content">
+        <h2 class="section-title wireframe-title">線框圖</h2>
+        <div class="wireframe-content">
+          <div class="wireframe-text">
+            <p class="wireframe-description">在定義資訊架構後，我使用手繪方式製作低保真線框圖來測試不同的佈局方法，這些線框圖幫助我驗證設計決策，並先進行初步的介面規劃。</p>
+            
+            <div class="wireframe-features">
+              <div class="feature feature-1">
+                <h3>投資組合頁面</h3>
+                <p>在投資組合介面當中，我增加了資訊的階層結構，
+                    總餘額和關鍵統計數據置於首頁以便快速獲取，
+                    而詳細資產清單和圖表則結構化以便使用者進行比較和導航。</p>
+              </div>
+              <div class="wireframe-images wireframe-images-1">
+                <img src="../images/case-coin/wireframe1-zh.png" alt="投資組合線框圖" class="wireframe-img wireframe-img-1">
+              </div>
+              
+              <div class="feature feature-2">
+                <h3>交易頁面</h3>
+                <p>線框圖專注於改善數據可讀性和簡化交易流程，加入直接下單的面板以簡化交易流程，
+                並且將重要的市場數據已區塊方式呈現，讓使用者能夠快速掃描價格變動、交易量等資訊。</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="wireframe-images wireframe-images-2">
+            <img src="../images/case-coin/wireframe2-zh.png" alt="交易線框圖" class="wireframe-img wireframe-img-2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prototyping Section -->
+  <section class="prototyping-section">
+    <div class="container">
+      <div class="section-content">
+        <h2 class="section-title">視覺設計和原型製作</h2>
+        <div class="prototyping-content">
+          <div class="prototyping-text">
+            <p>在視覺設計以及原型製作階段，我將線框稿轉換為可互動的高保真原型，以呈現使用者如何與優化後的 Coinbase 行動端應用程式進行互動，有助於驗證介面的使用性與資訊呈現是否清晰。</p>
+            <p>在投資組合部分我增加層次結構，在保持清晰度的同時為使用者提供更豐富的資訊。而資產的分佈則通過圓餅圖進行視覺化，讓使用者能夠快速理解資產的分佈狀況，
+              同時加入資產成長的趨勢圖，讓使用者能夠快速理解資產的成長趨勢。</p>
+          </div>
+          
+          <div class="prototyping-features">
+            <div class="prototyping-images wireframe-images-1">
+              <div class="portfolio-comparison">
+                <img src="../images/case-coin/portfolio1.png" alt="投資組合之前" class="prototype-img prototype-img-1">
+                
+                <!-- Arrow and Portfolio2 -->
+                <div class="prototype-arrow">
+                  <svg viewBox="0 0 250 80" class="arrow-svg">
+                    <defs>
+                      <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#0052ff;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <!-- Wavy to straight arrow -->
+                    <path d="M15 40
+                             c 10 -26 20 26 30 0
+                             c 12 -20 24 20 36 0
+                             c 10 -22 20 22 30 0
+                             c 12 -18 24 18 36 0
+                             L 205 40" fill="none" stroke="url(#arrowGradient)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polygon points="205,30 230,40 205,50" fill="url(#arrowGradient)"/>
+                  </svg>
+                </div>
+                
+                <video controls autoplay muted loop class="prototype-img prototype-img-2">
+                  <source src="../images/case-coin/prototyping1.mp4" type="video/mp4">
+                  您的瀏覽器不支援影片標籤。
+                </video>
+              </div>
+            </div>
+          </div>
+            <div class="prototyping-text">
+              <p>為了優化交易體驗，我在交易介面中添加了直接下單功能。透過新的設計，使用者可以在查看市場數據的同時進行下單，使流程更快速且更直觀。
+                同時，在價格趨勢圖旁新增了可切換的深度圖，讓使用者能依需求查看市場流動性。</p>
+            </div>
+            
+            <div class="prototyping-images wireframe-images-2">
+              <div class="portfolio-comparison">
+                <img src="../images/case-coin/portfolio2-1.png" alt="交易之前" class="prototype-img prototype-img-1">
+                
+                <!-- Arrow -->
+                <div class="prototype-arrow">
+                  <svg viewBox="0 0 250 80" class="arrow-svg">
+                    <defs>
+                      <linearGradient id="arrowGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#0052ff;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M15 40
+                             c 10 -26 20 26 30 0
+                             c 12 -20 24 20 36 0
+                             c 10 -22 20 22 30 0
+                             c 12 -18 24 18 36 0
+                             L 205 40" fill="none" stroke="url(#arrowGradient2)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polygon points="205,30 230,40 205,50" fill="url(#arrowGradient2)"/>
+                  </svg>
+                </div>
+                
+                <video controls autoplay muted loop playsinline class="prototype-img prototype-img-2">
+                  <source src="../images/case-coin/prototyping2.mp4" type="video/mp4">
+                  您的瀏覽器不支援影片標籤。
+                </video>
+              </div>
+            </div>
+            
+            <div class="prototyping-text">
+              <p>在交易介面的部分，我還將市場數據以列表方式重新組織成結構化區塊，這種佈局讓使用者能夠快速掃描價格變動、交易量和其他重點市場數據。</p>
+            </div>
+            
+            <div class="prototyping-images wireframe-images-3">
+              <div class="portfolio-comparison">
+                <img src="../images/case-coin/portfolio3-1.png" alt="投資組合增強之前" class="prototype-img prototype-img-1">
+                
+                <!-- Arrow -->
+                <div class="prototype-arrow">
+                  <svg viewBox="0 0 250 80" class="arrow-svg">
+                    <defs>
+                      <linearGradient id="arrowGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#0052ff;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M15 40
+                             c 10 -26 20 26 30 0
+                             c 12 -20 24 20 36 0
+                             c 10 -22 20 22 30 0
+                             c 12 -18 24 18 36 0
+                             L 205 40" fill="none" stroke="url(#arrowGradient3)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polygon points="205,30 230,40 205,50" fill="url(#arrowGradient3)"/>
+                  </svg>
+                </div>
+                
+                <img src="../images/case-coin/portfolio3-2.png" alt="投資組合增強之後" class="prototype-img prototype-img-2">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Impact & Learning Section -->
+  <section class="results-section">
+    <div class="container">
+      <div class="section-content">
+        <h2 class="section-title">成果與學習</h2>
+        <div class="results-content">
+          <div class="results-text">
+            <h3>成果</h3>
+            <ul>
+              <li>提升交易體驗，減少操作摩擦並清楚呈現市場資訊。</li>
+              <li>Portfolio 的階層化佈局與圖表讓使用者快速掌握關鍵資訊。</li>
+              <li>交易介面讓使用者可以直接下單，並同時查看深度圖，操作更順暢。</li>
+            </ul>
+          
+            <h3>學習</h3>
+            <ul>
+              <li>提升行動端應用程式設計能力，特別是在有限螢幕空間下安排資訊層次的技巧。</li>
+              <li>學會在資訊豐富與清晰易讀之間取得平衡，讓使用者能快速理解重要內容。</li>
+              <li>強化資訊視覺化與區塊化布局能力，使操作與理解更直覺。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--footer section-->
+  <footer class="footer">
+        <div class="footer-content">
+          <!-- 左邊 -->
+          <p class="copy">© 2025 All Rights Reserved</p>
+    
+          <!-- 右邊 -->
+          <div class="social-icon">
+            <a href="mailto:hello@pinchun.org">
+              <i data-lucide="mail"></i>
+            </a> 
+            <a href="https://www.linkedin.com/in/sherry-pinchun-chen-088210201/" target="_blank">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="https://dribbble.com/yourprofile" target="_blank" aria-label="Dribbble">
+              <i data-lucide="dribbble"></i>
+            </a>
+            <a href="https://github.com/aurumslab" target="_blank">
+              <i data-lucide="github"></i>
+            </a>
+          </div>
+        </div>
+    </footer>
+
+  <script>
+    lucide.createIcons();
+    
+    // Scroll-triggered animations
+    function handleScrollAnimations() {
+      // Challenge descriptions animations
+      const challengeDescriptions = document.querySelectorAll('.challenge-description');
+      
+      challengeDescriptions.forEach(challengeDescription => {
+        const challengeTitle = challengeDescription.querySelector('h4');
+        const challengeText = challengeDescription.querySelector('p');
+        
+        if (challengeDescription) {
+          const rect = challengeDescription.getBoundingClientRect();
+          const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+          
+          if (isVisible && !challengeDescription.classList.contains('animate-in')) {
+            challengeDescription.classList.add('animate-in');
+            if (challengeTitle) challengeTitle.classList.add('animate-in');
+            if (challengeText) challengeText.classList.add('animate-in');
+          }
+        }
+      });
+
+      // Solution section animations
+      const solutionIntro = document.querySelector('.solution-intro');
+      const principle1 = document.querySelector('.principle-1');
+      const principle2 = document.querySelector('.principle-2');
+      
+      if (solutionIntro) {
+        const rect = solutionIntro.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+        
+        if (isVisible && !solutionIntro.classList.contains('animate-in')) {
+          solutionIntro.classList.add('animate-in');
+          
+          // Animate principles with delays
+          setTimeout(() => {
+            if (principle1) principle1.classList.add('animate-in');
+          }, 200);
+          
+          setTimeout(() => {
+            if (principle2) principle2.classList.add('animate-in');
+          }, 400);
+        }
+      }
+
+      // Process section animations
+      const step1 = document.querySelector('.step-1');
+      const step2 = document.querySelector('.step-2');
+      const step3 = document.querySelector('.step-3');
+      const step4 = document.querySelector('.step-4');
+      
+      if (step1) {
+        const rect = step1.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+        
+        if (isVisible && !step1.classList.contains('animate-in')) {
+          step1.classList.add('animate-in');
+          
+          // Animate steps with staggered delays
+          setTimeout(() => {
+            if (step2) step2.classList.add('animate-in');
+          }, 100);
+          
+          setTimeout(() => {
+            if (step3) step3.classList.add('animate-in');
+          }, 200);
+          
+          setTimeout(() => {
+            if (step4) step4.classList.add('animate-in');
+          }, 300);
+        }
+      }
+    }
+    
+    // Wireframe section animations
+    function handleWireframeAnimations() {
+      const wireframeSection = document.querySelector('.wireframe-section');
+      if (!wireframeSection) return;
+      
+      const rect = wireframeSection.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+      
+      if (isVisible) {
+        const elements = [
+          '.wireframe-title',
+          '.wireframe-description', 
+          '.feature-1',
+          '.wireframe-img-1',
+          '.feature-2',
+          '.wireframe-img-2'
+        ];
+        
+        elements.forEach((selector, index) => {
+          const element = document.querySelector(selector);
+          if (element && !element.classList.contains('animate-in')) {
+            setTimeout(() => {
+              element.classList.add('animate-in');
+            }, index * 200); // Stagger the animations
+          }
+        });
+      }
+    }
+    
+    // Footer animation on scroll to bottom
+    function handleFooterAnimation() {
+      const footer = document.querySelector('footer');
+      if (!footer) return;
+      
+      const scrollTop = window.pageYOffset;
+      const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = scrollTop / documentHeight;
+      
+      // Show footer when scrolled to bottom (90% of the way for earlier appearance)
+      if (scrollPercent >= 0.90 && !footer.classList.contains('show')) {
+        footer.classList.add('show');
+        
+        // Add a subtle bounce effect
+        setTimeout(() => {
+          footer.style.transform = 'rotateX(0deg) translateY(-5px)';
+          setTimeout(() => {
+            footer.style.transform = 'rotateX(0deg) translateY(0)';
+          }, 150);
+        }, 200);
+      }
+    }
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', () => {
+      handleScrollAnimations();
+      handleWireframeAnimations();
+      handleFooterAnimation();
+    });
+    
+    // Check on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      handleScrollAnimations();
+      handleWireframeAnimations();
+      handleFooterAnimation();
+    });
+  </script>
+</body>
+</html>

@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>作品集 | Color Playground</title>
+  <link rel="icon" type="image/png" href="../images/logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Chiron+GoRound+TC:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="case-color-zh.css">
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -159,9 +160,53 @@
       </video>
     </div>
   </section>
+  <!--footer section-->
+  <footer class="footer">
+      <div class="footer-content">
+        <!-- 左邊 -->
+        <p class="copy">© 2025 All Rights Reserved</p>
+  
+        <!-- 右邊 -->
+        <div class="social-icon">
+          <a href="mailto:hello@pinchun.org">
+            <i data-lucide="mail"></i>
+          </a> 
+          <a href="https://www.linkedin.com/in/sherry-pinchun-chen-088210201/" target="_blank">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="https://dribbble.com/yourprofile" target="_blank" aria-label="Dribbble">
+            <i data-lucide="dribbble"></i>
+          </a>
+          <a href="https://github.com/aurumslab" target="_blank">
+            <i data-lucide="github"></i>
+          </a>
+        </div>
+      </div>
+  </footer>
 
   <script>
-    // Add any interactive functionality here if needed
+    lucide.createIcons();
+    
+    // Footer animation on scroll to bottom
+    function handleFooterAnimation() {
+      const footer = document.querySelector('footer');
+      if (!footer) return;
+      
+      const scrollTop = window.pageYOffset;
+      const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = scrollTop / documentHeight;
+      
+      // Show footer when scrolled to bottom (95% of the way)
+      if (scrollPercent >= 0.95 && !footer.classList.contains('show')) {
+        footer.classList.add('show');
+      }
+    }
+    
+    // Add scroll event listener for footer animation
+    window.addEventListener('scroll', handleFooterAnimation);
+    
+    // Check on page load
+    document.addEventListener('DOMContentLoaded', handleFooterAnimation);
   </script>
 </body>
 </html>

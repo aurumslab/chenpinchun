@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Case Study | Coinbase Redesign</title>
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Chiron+GoRound+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="case-coinbase.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="case-header">
+    <div class="header-container">
+      <div class="header-left">
+        <a href="../index.html" class="logo-link">
+          <img src="../images/logo.png" alt="Logo" class="header-logo">
+        </a>
+      </div>
+      
+      <div class="header-right">
+        <div class="language-switch">
+          <a href="../zh/case-coinbase-zh.html" class="lang-btn">中</a>
+          <span class="lang-separator">|</span>
+          <a href="case-coinbase.html" class="lang-btn active">EN</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">Redesigning Coinbase for Better User Experience</h1>
+        <p class="hero-subtitle">A mobile app redesign focusing on portfolio and trading pages to enhance clarity and usability</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section class="problem-section">
+    <div class="container">
+      <div class="section-content">
+        <h2 class="section-title">The Challenges</h2>
+        <div class="problem-text">
+          <p>Coinbase is a leading platform in the cryptocurrency market, but user feedback indicates that the mobile trading experience has some issues. Users often find the mobile trading interface visually cluttered and difficult to understand, creating friction when executing trades. Additionally, the portfolio interface lacks clarity, making it difficult for users to quickly grasp total balances, asset allocation, and growth trends.</p>
+          
+          <p>Through user research, I identified two key areas that require immediate improvement: the portfolio interface and the trading interface:</p>
+          
+          <ul>
+            <strong>Portfolio Interface — Poor Data Visualization</strong><br>
+            • Lacks clear graphical representations (such as pie charts or trend lines)<br>
+            • Difficult to quickly assess performance trends or asset allocation<br>
+            • Low user engagement<br><br>
+                      
+            <strong>Trading Page — Unclear Entry Points</strong><br>
+            • Users often struggle to locate the order placement, requiring multiple attempts to find it.<br>
+            • Users spend more time interpreting trading information.<br>
+          </ul>
+          
+          <p>As a designer, my task was to redesign the portfolio and trading interfaces to create clear visual hierarchy, intuitive user flows, and an easier-to-use trading experience, while maintaining Coinbase’s professionalism and credibility.</p>
+          
+          <div class="challenge-images">
+            <div class="challenge-image-item challenge-with-description">
+              <div class="challenge-image-container">
+                <img src="../images/case-coin/challenge1.jpg" alt="Portfolio Page Challenge">
+              </div>
+              <div class="challenge-description">
+                <h4>Portfolio Page — Poor data visualization</h4>
+                <p>The current portfolio interface lacks hierarchy and visual cues, making it difficult for users to quickly understand balances, allocation, and growth trends, which reduces user engagement.</p>
+              </div>
+            </div>
+            
+            <div class="challenge-bottom-images">
+              <div class="challenge-image-item">
+                <img src="../images/case-coin/challenge2.png" alt="Trading Page Challenge">
+              </div>
+              <div class="challenge-image-item challenge-with-description">
+                <div class="challenge-image-container">
+                  <img src="../images/case-coin/challenge3.png" alt="User Experience Challenge">
+                </div>
+                <div class="challenge-description">
+                  <h4>Trading Page — Unclear entry points</h4>
+                  <p>On the trading page, users cannot quickly place orders or interpret key market data, and some need multiple attempts to complete a trade.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Solution Section -->
+  <section class="solution-section">
+    <div class="container">
+      <div class="section-content">
+        <h2 class="section-title">The Solution</h2>
+        <div class="solution-content">
+          <div class="solution-text">
+            <p class="solution-intro">I sketched redesigned versions of the portfolio and trading interfaces to address key usability issues. The solution focuses on clear hierarchy, improved data visualization, and simplified user flows.</p>
+            
+            <div class="principles">
+              <div class="principle principle-1">
+                <h3>Portfolio Page:</h3>
+                <ul>
+                  <li><strong>Clear hierarchy:</strong> Total balances and key metrics are visually prioritized, adding layers of information while keeping the interface clean.</li>
+                  <li><strong>Data visualization:</strong> Mini trend lines, pie charts, or bar charts display performance and asset allocation.</li>
+                </ul>
+              </div>
+              
+              <div class="principle principle-2">
+                <h3>Trading Page:</h3>
+                <ul>
+                  <li><strong>Readable market data:</strong> Market information is redesigned to be clear and scannable.</li>
+                  <li><strong>Direct order placement:</strong> Introduces a direct order panel so users can trade immediately upon entering the trading page.</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-content">
+        <h2 class="section-title">Design Process</h2>
+        <div class="process-content">
+          <div class="process-steps">
+            <div class="step step-1">
+              <div class="step-number">01</div>
+              <div class="step-content">
+                <h3>User Research & Analysis</h3>
+                <p>Conducted interviews with 5+ Coinbase users to understand pain points and behavior.</p>
+              </div>
+            </div>
+            
+            <div class="step step-2">
+              <div class="step-number">02</div>
+              <div class="step-content">
+                <h3>Information Architecture</h3>
+                <p>Rebuilt navigation and content hierarchy based on user priorities and mental models.</p>
+              </div>
+            </div>
+            
+            <div class="step step-3">
+              <div class="step-number">03</div>
+              <div class="step-content">
+                <h3>Wireframing</h3>
+                <p>Created low-fidelity wireframes and interactive prototypes to test different approaches.</p>
+              </div>
+            </div>
+            
+            <div class="step step-4">
+              <div class="step-number">04</div>
+              <div class="step-content">
+                <h3>Visual Design & Testing</h3>
+                <p>Developed high-fidelity designs and conducted usability testing with target users.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wireframe Section -->
+  <section class="wireframe-section">
+    <div class="container">
+      <div class="section-content">
+        <h2 class="section-title wireframe-title">Wireframeing</h2>
+        <div class="wireframe-content">
+          <div class="wireframe-text">
+            <p class="wireframe-description">After defining the information architecture, I created low-fidelity hand-drawn wireframes to test different layout approaches. These wireframes helped validate design decisions and plan the interface structure in advance.</p>
+            
+            <div class="wireframe-features">
+              <div class="feature feature-1">
+                <h3>Portfolio Page</h3>
+                <p>For the portfolio interface, I added information hierarchy.
+                   Total balances and key metrics are prioritized on the home screen
+                    for quick access, while detailed asset lists and charts are structured for easy comparison and navigation.</p>
+
+              </div>
+              <div class="wireframe-images wireframe-images-1">
+                <img src="../images/case-coin/wireframe1.png" alt="Portfolio Wireframe" class="wireframe-img wireframe-img-1">
+              </div>
+              
+              <div class="feature feature-2">
+                <h3>Trading Page</h3>
+                <p>The wireframes focus on improving data readability and simplifying the
+                   trading flow, adding a direct order panel for faster transactions, 
+                   and presenting key market data in blocks for quick scanning of prices, volumes, and other metrics.</p>
+
+              </div>
+            </div>
+          </div>
+          
+          <div class="wireframe-images wireframe-images-2">
+            <img src="../images/case-coin/wireframe2.png" alt="Trading Wireframe" class="wireframe-img wireframe-img-2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prototyping Section -->
+  <section class="prototyping-section">
+    <div class="container">
+      <div class="section-content">
+        <h2 class="section-title">Visual Design & Prototyping</h2>
+        <div class="prototyping-content">
+          <div class="prototyping-text">
+            <p>During the visual design and prototyping phase, I converted the wireframes into interactive high-fidelity prototypes to demonstrate how users would interact with the optimized Coinbase mobile app, helping to validate usability and clarity of information presentation.</p>
+            <p>For the portfolio section, I added hierarchy to provide richer information while maintaining clarity. Asset allocation is visualized using pie charts, allowing users to quickly understand distribution, and trend charts help users track asset growth over time.</p>
+          </div>
+          
+          <div class="prototyping-features">
+            <div class="prototyping-images wireframe-images-1">
+              <div class="portfolio-comparison">
+                <img src="../images/case-coin/portfolio1.png" alt="Portfolio Before" class="prototype-img prototype-img-1">
+                
+                <!-- Arrow and Portfolio2 -->
+                <div class="prototype-arrow">
+                  <svg viewBox="0 0 250 80" class="arrow-svg">
+                    <defs>
+                      <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#0052ff;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <!-- Wavy to straight arrow -->
+                    <path d="M15 40
+                             c 10 -26 20 26 30 0
+                             c 12 -20 24 20 36 0
+                             c 10 -22 20 22 30 0
+                             c 12 -18 24 18 36 0
+                             L 205 40" fill="none" stroke="url(#arrowGradient)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polygon points="205,30 230,40 205,50" fill="url(#arrowGradient)"/>
+                  </svg>
+                </div>
+                
+                <video controls autoplay muted loop class="prototype-img prototype-img-2">
+                  <source src="../images/case-coin/prototyping1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+            <div class="prototyping-text">
+              <p>To optimize the trading experience, I added a direct order feature to the 
+                trading interface. Users can now place orders while viewing market data, 
+                making the process faster and more intuitive. Additionally, A switchable 
+                depth chart was added alongside the price trend chart, allowing users to 
+                view market liquidity and trends in the way that best supports their trading decisions.</p>
+            </div>
+            
+            <div class="prototyping-images wireframe-images-2">
+              <div class="portfolio-comparison">
+                <img src="../images/case-coin/portfolio2-1.png" alt="Trading Before" class="prototype-img prototype-img-1">
+                
+                <!-- Arrow -->
+                <div class="prototype-arrow">
+                  <svg viewBox="0 0 250 80" class="arrow-svg">
+                    <defs>
+                      <linearGradient id="arrowGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#0052ff;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M15 40
+                             c 10 -26 20 26 30 0
+                             c 12 -20 24 20 36 0
+                             c 10 -22 20 22 30 0
+                             c 12 -18 24 18 36 0
+                             L 205 40" fill="none" stroke="url(#arrowGradient2)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polygon points="205,30 230,40 205,50" fill="url(#arrowGradient2)"/>
+                  </svg>
+                </div>
+                
+                <video controls autoplay muted loop playsinline class="prototype-img prototype-img-2">
+                  <source src="../images/case-coin/prototyping2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            
+            <div class="prototyping-text">
+              <p>For the trading interface, I also reorganized market data into structured blocks, allowing users to quickly scan prices, volumes, and other key market information.</p>
+            </div>
+            
+            <div class="prototyping-images wireframe-images-3">
+              <div class="portfolio-comparison">
+                <img src="../images/case-coin/portfolio3-1.png" alt="Portfolio Enhancement Before" class="prototype-img prototype-img-1">
+                
+                <!-- Arrow -->
+                <div class="prototype-arrow">
+                  <svg viewBox="0 0 250 80" class="arrow-svg">
+                    <defs>
+                      <linearGradient id="arrowGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#0052ff;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M15 40
+                             c 10 -26 20 26 30 0
+                             c 12 -20 24 20 36 0
+                             c 10 -22 20 22 30 0
+                             c 12 -18 24 18 36 0
+                             L 205 40" fill="none" stroke="url(#arrowGradient3)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polygon points="205,30 230,40 205,50" fill="url(#arrowGradient3)"/>
+                  </svg>
+                </div>
+                
+                <img src="../images/case-coin/portfolio3-2.png" alt="Portfolio Enhancement After" class="prototype-img prototype-img-2">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Impact & Learning Section -->
+  <section class="results-section">
+    <div class="container">
+      <div class="section-content">
+        <h2 class="section-title">Impact & Learning</h2>
+        <div class="results-content">
+          <div class="results-text">
+            <h3>Impact</h3>
+            <ul>
+              <li>Improved the trading experience by reducing friction and clearly presenting market information.</li>
+              <li>The hierarchical layout and charts in the portfolio helped users quickly grasp key information.</li>
+              <li>The trading interface allows users to place orders directly while viewing market depth, enabling smoother operation.</li>
+            </ul>
+          
+            <h3>Learning</h3>
+            <ul>
+              <li>Enhanced skills in mobile app design, especially arranging hierarchical information on limited screen space.</li>
+              <li>Learned to balance rich content with clarity, allowing users to quickly understand key information.</li>
+              <li>Strengthened abilities in data visualization and block-based layout design, making operations and understanding more intuitive.</li>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--footer section-->
+  <footer class="footer">
+        <div class="footer-content">
+          <!-- 左邊 -->
+          <p class="copy">© 2025 All Rights Reserved</p>
+    
+          <!-- 右邊 -->
+          <div class="social-icon">
+            <a href="mailto:hello@pinchun.org">
+              <i data-lucide="mail"></i>
+            </a> 
+            <a href="https://www.linkedin.com/in/sherry-pinchun-chen-088210201/" target="_blank">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="https://dribbble.com/yourprofile" target="_blank" aria-label="Dribbble">
+              <i data-lucide="dribbble"></i>
+            </a>
+            <a href="https://github.com/aurumslab" target="_blank">
+              <i data-lucide="github"></i>
+            </a>
+          </div>
+        </div>
+    </footer>
+
+  <script>
+    lucide.createIcons();
+    
+    // Scroll-triggered animations
+    function handleScrollAnimations() {
+      // Challenge descriptions animations
+      const challengeDescriptions = document.querySelectorAll('.challenge-description');
+      
+      challengeDescriptions.forEach(challengeDescription => {
+        const challengeTitle = challengeDescription.querySelector('h4');
+        const challengeText = challengeDescription.querySelector('p');
+        
+        if (challengeDescription) {
+          const rect = challengeDescription.getBoundingClientRect();
+          const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+          
+          if (isVisible && !challengeDescription.classList.contains('animate-in')) {
+            challengeDescription.classList.add('animate-in');
+            if (challengeTitle) challengeTitle.classList.add('animate-in');
+            if (challengeText) challengeText.classList.add('animate-in');
+          }
+        }
+      });
+
+      // Solution section animations
+      const solutionIntro = document.querySelector('.solution-intro');
+      const principle1 = document.querySelector('.principle-1');
+      const principle2 = document.querySelector('.principle-2');
+      
+      if (solutionIntro) {
+        const rect = solutionIntro.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+        
+        if (isVisible && !solutionIntro.classList.contains('animate-in')) {
+          solutionIntro.classList.add('animate-in');
+          
+          // Animate principles with delays
+          setTimeout(() => {
+            if (principle1) principle1.classList.add('animate-in');
+          }, 200);
+          
+          setTimeout(() => {
+            if (principle2) principle2.classList.add('animate-in');
+          }, 400);
+        }
+      }
+
+      // Process section animations
+      const step1 = document.querySelector('.step-1');
+      const step2 = document.querySelector('.step-2');
+      const step3 = document.querySelector('.step-3');
+      const step4 = document.querySelector('.step-4');
+      
+      if (step1) {
+        const rect = step1.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+        
+        if (isVisible && !step1.classList.contains('animate-in')) {
+          step1.classList.add('animate-in');
+          
+          // Animate steps with staggered delays
+          setTimeout(() => {
+            if (step2) step2.classList.add('animate-in');
+          }, 100);
+          
+          setTimeout(() => {
+            if (step3) step3.classList.add('animate-in');
+          }, 200);
+          
+          setTimeout(() => {
+            if (step4) step4.classList.add('animate-in');
+          }, 300);
+        }
+      }
+    }
+    
+    // Wireframe section animations
+    function handleWireframeAnimations() {
+      const wireframeSection = document.querySelector('.wireframe-section');
+      if (!wireframeSection) return;
+      
+      const rect = wireframeSection.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+      
+      if (isVisible) {
+        const elements = [
+          '.wireframe-title',
+          '.wireframe-description', 
+          '.feature-1',
+          '.wireframe-img-1',
+          '.feature-2',
+          '.wireframe-img-2'
+        ];
+        
+        elements.forEach((selector, index) => {
+          const element = document.querySelector(selector);
+          if (element && !element.classList.contains('animate-in')) {
+            setTimeout(() => {
+              element.classList.add('animate-in');
+            }, index * 200); // Stagger the animations
+          }
+        });
+      }
+    }
+    
+    // Footer animation on scroll to bottom
+    function handleFooterAnimation() {
+      const footer = document.querySelector('footer');
+      if (!footer) return;
+      
+      const scrollTop = window.pageYOffset;
+      const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = scrollTop / documentHeight;
+      
+      // Show footer when scrolled to bottom (90% of the way for earlier appearance)
+      if (scrollPercent >= 0.90 && !footer.classList.contains('show')) {
+        footer.classList.add('show');
+        
+        // Add a subtle bounce effect
+        setTimeout(() => {
+          footer.style.transform = 'rotateX(0deg) translateY(-5px)';
+          setTimeout(() => {
+            footer.style.transform = 'rotateX(0deg) translateY(0)';
+          }, 150);
+        }, 200);
+      }
+    }
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', () => {
+      handleScrollAnimations();
+      handleWireframeAnimations();
+      handleFooterAnimation();
+    });
+    
+    // Check on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      handleScrollAnimations();
+      handleWireframeAnimations();
+      handleFooterAnimation();
+    });
+  </script>
+</body>
+</html>

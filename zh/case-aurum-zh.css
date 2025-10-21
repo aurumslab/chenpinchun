@@ -3273,6 +3273,77 @@ transition: top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.1s ease;
     gap: 60px; /* Reduce gap from 120px to 60px */
   }
 }
+
+/* Footer */
+footer {
+  position: relative;
+  background: #111;
+  color: #eee;
+  padding: 30px 40px;
+  text-align: left;
+  transform-origin: bottom center;   /* 從底部翻開 */
+  transform: rotateX(90deg);         /* 初始收起來 */
+  transition: transform 1s ease;     /* 翻開動畫 */
+}
+
+footer.show {
+  transform: rotateX(0deg);          /* 翻開 */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;                     /* 加這個 */
+  justify-content: space-between;    /* 左右對齊 */
+  align-items: center;               /* 垂直置中 */
+}
+
+.social-icon {
+  display: flex;               
+  margin:0;
+  gap: 24px;
+  align-items: center;
+}
+
+.social-icon svg {
+  stroke-width: 1.2; 
+}
+.social-icon a {
+  color: #fff;             /* 統一 icon 顏色 */
+  text-decoration: none;      /* 移除底線 */
+  display: inline-flex;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.social-icon a:hover {
+  color: #2baaff;                /* hover 顯示白色 */
+  transform: scale(1.2);
+}
+
+.copy {
+  text-align: left;
+  font-size: 0.8rem !important;
+  color: #aaa;
+  margin: 0;                     /* 🔹去掉多餘 margin */
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 0 20px;
+  }
   
+  .social-icon {
+    gap: 16px;
+  }
+  
+  .copy {
+    font-size: 0.7rem !important;
+  }
+}
 
   
