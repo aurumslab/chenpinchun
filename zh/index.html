@@ -1003,9 +1003,12 @@
     });
 
     // Start observing the about section if it exists
-    if (aboutSection) {
-      aboutObserver.observe(aboutSection);
-    }
+    // Delay about section observer initialization until after splash screen completes
+    setTimeout(() => {
+      if (aboutSection) {
+        aboutObserver.observe(aboutSection);
+      }
+    }, 5000); // Wait for splash screen to complete and main content to be visible
 
     // ===== ANIMATED COUNTER FUNCTION =====
     // Function to animate numbers from 0 to target value
@@ -1015,7 +1018,7 @@
       const increment = targetNumber / 100; // Calculate increment for smooth animation
       const timer = setInterval(() => {
         current += increment; // Add increment to current value
-        if (current >= targetNumber) {
+      if (current >= targetNumber) {
           current = targetNumber; // Ensure we don't exceed target
           clearInterval(timer); // Stop the animation
         }
@@ -1050,10 +1053,13 @@
     });
 
     // Get stats container and start observing if it exists
-    const statsContainer = document.querySelector('.stats-container');
-    if (statsContainer) {
-      statsObserver.observe(statsContainer);
-    }
+    // Delay stats observer initialization until after splash screen completes
+    setTimeout(() => {
+      const statsContainer = document.querySelector('.stats-container');
+      if (statsContainer) {
+        statsObserver.observe(statsContainer);
+      }
+    }, 5000); // Wait for splash screen to complete and main content to be visible
 
 
     // ===== PHOTO OVERLAY INTERACTION =====
@@ -1092,8 +1098,8 @@
 
     // ===== CSS ANIMATION DEFINITION =====
     // Create and inject CSS keyframes for ripple animation
-    const style = document.createElement('style');
-    style.textContent = `
+    const rippleStyle = document.createElement('style');
+    rippleStyle.textContent = `
       @keyframes ripple {
         to {
           transform: scale(4); // Scale up to 4x size
@@ -1101,14 +1107,9 @@
         }
       }
     `;
-    document.head.appendChild(style); // Add to document head
-  </script>
-    
+    document.head.appendChild(rippleStyle); // Add to document head
 
-    <script>
-        lucide.createIcons();
-    </script>
-
+    lucide.createIcons();
   </script>
 
 </body>

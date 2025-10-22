@@ -996,9 +996,12 @@
     });
 
     // Start observing the about section if it exists
-    if (aboutSection) {
-      aboutObserver.observe(aboutSection);
-    }
+    // Delay about section observer initialization until after splash screen completes
+    setTimeout(() => {
+      if (aboutSection) {
+        aboutObserver.observe(aboutSection);
+      }
+    }, 5000); // Wait for splash screen to complete and main content to be visible
 
     // ===== ANIMATED COUNTER FUNCTION =====
     // Function to animate numbers from 0 to target value
@@ -1043,10 +1046,13 @@
     });
 
     // Get stats container and start observing if it exists
-    const statsContainer = document.querySelector('.stats-container');
-    if (statsContainer) {
-      statsObserver.observe(statsContainer);
-    }
+    // Delay stats observer initialization until after splash screen completes
+    setTimeout(() => {
+      const statsContainer = document.querySelector('.stats-container');
+      if (statsContainer) {
+        statsObserver.observe(statsContainer);
+      }
+    }, 5000); // Wait for splash screen to complete and main content to be visible
 
     // ===== PHOTO OVERLAY INTERACTION =====
     // Get profile photo element
