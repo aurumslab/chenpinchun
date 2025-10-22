@@ -232,7 +232,7 @@
       background-size: 200% 100%;
       width: 0%;
       border-radius: 2px;
-      animation: loadProgress 2.5s ease-out 2.2s forwards, gradientMove 2s ease-in-out infinite;
+      animation: loadProgress 1.5s ease-out 1.2s forwards, gradientMove 2s ease-in-out infinite;
       position: relative;
       filter: saturate(0.6) brightness(1.1);
     }
@@ -786,7 +786,7 @@
     setTimeout(() => {
       splashScreen.classList.add('hidden');
       mainContent.classList.add('visible');
-    }, 4500); // Total splash duration: 4.5 seconds
+    }, 3500); // Total splash duration: 3 seconds
 
     // Skip splash on click/tap
     document.addEventListener('click', () => {
@@ -827,7 +827,7 @@
     // Start typing effect after splash
     setTimeout(() => {
       typeEffect();
-    }, 5000);
+    }, 400);
 
     // Simple tilt and spotlight glow for case cards
     const tiltCards = document.querySelectorAll('.card-tilt');
@@ -1001,7 +1001,7 @@
       if (aboutSection) {
         aboutObserver.observe(aboutSection);
       }
-    }, 5000); // Wait for splash screen to complete and main content to be visible
+    }, 3500); // Wait for splash screen to complete and main content to be visible
 
     // ===== ANIMATED COUNTER FUNCTION =====
     // Function to animate numbers from 0 to target value
@@ -1052,7 +1052,7 @@
       if (statsContainer) {
         statsObserver.observe(statsContainer);
       }
-    }, 5000); // Wait for splash screen to complete and main content to be visible
+    }, 3500); // Wait for splash screen to complete and main content to be visible
 
     // ===== PHOTO OVERLAY INTERACTION =====
     // Get profile photo element
